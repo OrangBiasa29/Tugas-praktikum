@@ -24,9 +24,9 @@ struct pasar{
 		}
 		total = 0;
 		sum = 0;
-		for (int i; i<n; i++) {
+		for (int i=0; i<n; i++) {
 			total += barang[i].jumlah;
-			sum = barang[i].harga;  
+			sum += barang[i].harga;  
 		}
 		sum = sum/n;
 		cout << "jumlah seluruh barang = " << total << endl;
